@@ -1,0 +1,35 @@
+{
+  "provisioningState": "",
+  "orchestratorProfile": {
+    "orchestratorType": "Swarm"
+  },
+  "masterProfile": {
+    "count": 1,
+    "dnsPrefix": “acsDnsMaster12345”,
+    "fqdn": ""
+  },
+  "agentPoolProfiles": [
+    {
+      "name": “acsAgent12345”,
+      "count": null,
+      "vmSize": "Standard_A1",
+      "dnsPrefix": "acsDnsAgent12345",
+      "fqdn": ""
+    }
+  ],
+  "linuxProfile": {
+    "adminUsername": "azureuser",
+    "ssh": {
+      "publicKeys": [
+        {
+          "keyData": “<PLEASE-ENTER-YOUR-PUBLIC-SSH-KEY>“
+        }
+      ]
+    }
+  },
+  "id": null,
+  "name": "xplatContainer21664",
+  "type": null,
+  "location": "australiasoutheast",
+  "tags": {}
+}
