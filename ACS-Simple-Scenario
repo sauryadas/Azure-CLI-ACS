@@ -12,6 +12,9 @@ It takes about 15 minutes to deploy the cluster.
 
 Please use the attached pre-filled parameter json file (acstemplate.json) to deploy a Swarm cluster.
 **Please make sure that you fill in the public SSH key. Every other required parameter is filled for your convenience**
+Follow instructions to generate SSH RSA keys in section SSH Key Generation
+https://github.com/Azure/azure-quickstart-templates/blob/master/101-acs-mesos/docs/SSHKeyManagement.md#ssh-key-generation
+
 
 ## List container service by resource group:
 ~ sauryadas$ azure container list-by-resource-group <resource-group-name>
