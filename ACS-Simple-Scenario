@@ -1,7 +1,6 @@
 ## Create a resource group:
-```
 ~ sauryadas$ azure group create <resource-group-name> <location>
-```
+
 
 ## Generate a skeleton(configuration file) to set parameters:
 ~ sauryadas$ azure container config generate --parameter-file <parameter-file-name.json>
