@@ -1,0 +1,25 @@
+## Create a resource group:
+```
+~ sauryadas$ azure group create <resource-group-name> <location>
+```
+
+## Generate a skeleton(configuration file) to set parameters:
+~ sauryadas$ azure container config generate --parameter-file <parameter-file-name.json>
+
+## Deploy the cluster using the command:
+~ sauryadas$ azure container create-or-update <resource-group-name> <container-service-name> --parameter-file <parameter-file-name.json>
+
+It takes about 15 minutes to deploy the cluster.
+
+Please use the attached pre-filled parameter json file (acstemplate.json) to deploy a Swarm cluster.
+**Please make sure that you fill in the public SSH key. Every other required parameter is filled for your convenience**
+
+## List container service by resource group:
+~ sauryadas$ azure container list-by-resource-group <resource-group-name>
+
+## Get status of a container service:
+~ sauryadas$ azure container get <resource-group-name> <container-service-name>
+
+## Delete a container:
+~ sauryadas$ azure container delete <resource-group-name> <container-service-name>
+
