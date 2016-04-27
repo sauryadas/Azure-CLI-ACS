@@ -7,11 +7,11 @@
 
 ##### Generate a skeleton(configuration file) to set parameters:
 ```
-~ sauryadas$ azure container config create --parameter-file <parameter-file-name.json>
+~ sauryadas$ azure acs config create --parameter-file <parameter-file-name.json>
 ```
 ##### Deploy the cluster using the command:
 ```
-~ sauryadas$ azure container create <resource-group-name> <container-service-name> --parameter-file <parameter-file-name.json>
+~ sauryadas$ azure acs create <resource-group-name> <container-service-name> --parameter-file <parameter-file-name.json>
 ```
 
 It takes about 15 minutes to deploy the cluster.
@@ -62,15 +62,15 @@ Follow instructions to generate SSH RSA keys in [section SSH Key Generation](htt
 
 ##### List container service by resource group:
 ```
-~ sauryadas$ azure container list <resource-group-name>
+~ sauryadas$ azure acs list <resource-group-name>
 ```
 
 ##### Display status of a container service:
 ```
-~ sauryadas$ azure container show <resource-group-name> <container-service-name>
+~ sauryadas$ azure acs show <resource-group-name> <container-service-name>
 ```
 
 ##### Delete a container:
 ```
-~ sauryadas$ azure container delete <resource-group-name> <container-service-name>
+~ sauryadas$ azure acs delete <resource-group-name> <container-service-name>
 ```
